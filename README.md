@@ -1,2 +1,4 @@
-# VoiceAssistant
-Voice Assistant script on Python
+# Голосовой ассистент
+Помощник для компьютера написанный на Python
+
+# Использованные билиотеки
