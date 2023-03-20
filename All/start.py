@@ -262,27 +262,6 @@ class VoiceAssistant():
                 # Конечный выход
                 exit()
 
-
-            # Старт
-            if data[0] == "старт":
-
-                self.speak_text("Открываю презентацию")
-
-                desktop_path = os.path.join(os.path.join(os.environ['USERPROFILE']), 'Desktop')
-                file_path = os.path.join(desktop_path, 'ГолосовойАссистент.pptx')
-
-                os.startfile(file_path)
-
-                from time import sleep
-                sleep(10)
-                self.speak_text("Тема проекта - голосовой ассистент на пайтон")
-
-            # Конец
-            if data[0] == "конец":
-                winsound.PlaySound("Resources/Sound/bye_rec.wav", winsound.SND_FILENAME)
-                self.speak_text("Спасибо за внимание!")
-                exit()
-
     # Поиск видео
     def youtube_search(self, search):
         # Формирование ссылки
