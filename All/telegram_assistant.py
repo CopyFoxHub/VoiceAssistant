@@ -1,7 +1,7 @@
 # Импорт необходимых модулей
 from aiogram import Bot, Dispatcher, executor, types
 
-with open("Resources/Files/teleid.txt", "r") as file:
+with open("Resources/Files/TeleID.txt", "r") as file:
     TELEGRAM_ID = int(file.read())
 
 # Функция для отправки сообщений
