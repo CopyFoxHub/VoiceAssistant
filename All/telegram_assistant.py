@@ -1,6 +1,8 @@
 # Импорт необходимых модулей
 from aiogram import Bot, Dispatcher, executor, types
 
+with open("Resources/Files/teleid.txt", "r") as file:
+    TELEGRAM_ID = int(file.read())
 
 # Функция для отправки сообщений
 def my_answer_send():
@@ -16,7 +18,7 @@ def my_answer_send():
         # Текст, который нужно отправить
         with open("Resources/Files/Answer.txt", "r", encoding="utf-8") as file:
             text = file.read()
-        await bot.send_message(chat_id=958416955, text=text)
+        await bot.send_message(chat_id=TELEGRAM_ID, text=text)
         exit()
 
     # Запуск
